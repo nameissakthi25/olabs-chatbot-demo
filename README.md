@@ -1,10 +1,11 @@
 # Context-Aware Chatbot
 
-A Streamlit-based chatbot that answers questions based on provided web content using LangChain and Ollama. The chatbot strictly responds to questions related to the content from the URLs you provide.
+A Streamlit-based chatbot that answers questions based on provided web content using LangChain and Ollama. The chatbot includes both text and voice input capabilities.
 
 ## Features
 
-- Load content from multiple URLs
+- Pre-loaded content about Lyophilic and Lyophobic Sols
+- Voice-to-text input support
 - Process and chunk content for efficient retrieval
 - Context-aware responses using LLM
 - Clean chat interface
@@ -16,6 +17,26 @@ A Streamlit-based chatbot that answers questions based on provided web content u
 - Python 3.8 or higher
 - Ollama
 - Windows/Linux/MacOS
+- Microphone for voice input
+
+## Additional System Requirements for Voice Input
+
+### Windows
+- Microsoft Visual C++ 14.0 or greater
+- Working microphone
+
+### Linux
+Install required system packages:
+```bash
+sudo apt-get install python3-pyaudio
+sudo apt-get install portaudio19-dev
+```
+
+### MacOS
+Install required system packages:
+```bash
+brew install portaudio
+```
 
 ## Installation Guide
 
